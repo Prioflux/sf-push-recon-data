@@ -1,0 +1,20 @@
+{
+  "auto_hide_formula": "",
+  "text_configuration": null,
+  "virtual_account_number": "",
+  "reconciliation_type": "only_reconciled_with_data",
+  "public": false,
+  "allow_duplicate_reconciliation": false,
+  "is_active": true,
+  "externally_managed": false,
+  "id": {
+    "13827": 67998050
+  },
+  "text": "main.liquid",
+  "text_parts": {},
+  "handle": "demo_infofiche",
+  "name_nl": "Demo infofiche",
+  "name_en": "Demo infofiche",
+  "name_fr": "Demo infofiche",
+  "test": "tests/demo_infofiche_liquid_test.yml"
+}
