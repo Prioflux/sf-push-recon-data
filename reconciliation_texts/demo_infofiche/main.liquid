@@ -1,2 +1,9 @@
-Verantwoordelijk kantoor: {% input company.custom.info.office as:select options:"Kortrijk|Gent" option_values:"kortrijk|gent" required:true %}
-{% result "kantoor" company.custom.info.office %}
+{% assign office_options = "Maldegem|Gent|Lochristi|Oudenaarde|Aalst|Beveren|Bekkevoort|Leuven|Leuven (hoofdkantoor)|Schepdaal|Ieper|Loppem|Diksmuide|Roeselare|Tielt|Zwevegem|Turnhout|Antwerpen|Brecht|Geel|Hoogstraten|Sint-Katelijne Waver|Hasselt|Lanaken|Sint-Truiden|Tongeren|Bree" %}
+
+{% assign office_values = "maldegem|gent|lochristi|oudenaarde|aalst|beveren|bekkevoort|leuven|leuven_hoofdkantoor|schepdaal|ieper|loppem|diksmuide|roeselare|tielt|zwevegem|turnhout|antwerpen|brecht|geel|hoogstraten|sint_katelijne_waver|hasselt|lanaken|sint_truiden|tongeren|bree" %}
+
+{% assign applicable_office = company.custom.office.name | default:"" %}
+
+Verantwoordelijk kantoor: {% input company.custom.office.name as:select options:office_options option_values:office_values required:true %}
+{% result "gebied_klant" applicable_office %}
+

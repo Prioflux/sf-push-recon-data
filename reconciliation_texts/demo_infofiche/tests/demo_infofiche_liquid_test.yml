@@ -1,1 +1,28 @@
-# Add your Liquid Tests here
+# Empty state
+empty_state: &unit_blueprint
+  context:
+    period: 2022-12-31
+  data:
+    periods:
+      2022-12-31:
+  expectation: &expectation_blueprint
+    reconciled: false
+    results:
+      gebied_klant: ""
+
+# UNIT 1 - TEST 1: selected value for office name
+unit_1_test_1_office_name_selected:
+  <<: *unit_blueprint
+
+  data:
+    company:
+      custom:
+        office.name: "leuven_hoofdkantoor"
+
+    periods:
+      2022-12-31:
+
+  expectation:
+    <<: *expectation_blueprint
+    results:
+      gebied_klant: "leuven_hoofdkantoor"
