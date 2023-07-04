@@ -27,16 +27,19 @@ More on liquid testing can be found here: https://developer.silverfin.com/docs/l
 ## Prerequisites
 
 1. Node.js (https://nodejs.org/en/download/)
-   The script is written in JavaScript and node.js is needed to run the script locally.
 
-2. Valid Silverfin environment (firm)
+   - The script is written in JavaScript and node.js is needed to run the script locally.
+
+2. Valid Silverfin environment (in other words, you already have a firm in Silverfin and your user is added)
+
    This script assumes that the following things are already set-up in your Silverfin environment:
 
-- The list of companies for which you want to run the script are already added in Silverfin and have a the same file code from your local system.
-- The reconciliation template is already created in Silverfin and has been (auto)-added to all the created companies.
+   - The list of companies for which you want to run the script are already added in Silverfin and the companies in Silverfin have the same file code as your local system.
+   - In order for the result to be generated and be able to be queried through insights, the reconciliation template should be created in Silverfin and it should have been (auto)-added to all the created companies.
 
 3. Silverfin API credentials
-   The Silverfin API uses OAuth 2.0, in order to use the API you need to create an API client in Silverfin to obtain the credentials (client ID / secret) and generate the access token.
+
+   The Silverfin API uses OAuth2, in order to use the API you need to have contacted Silverfin Support to create an API client in Silverfin and obtain the credentials (client ID / secret) to generate the access token.
 
 ## Setup
 
@@ -56,6 +59,8 @@ The `axios` package is used to make the API calls to Silverfin.
 
 The `dotenv` package is used to read the `.env` file.
 
+Install the dependencies with the following command:
+
 ```
 npm install
 ```
@@ -66,7 +71,7 @@ An example of the array of companies can be found in `example_data/companies.jso
 
 ## Run the script
 
-The script can be run with the following command from your local terminal:
+The script can be run with the following command:
 
 ```
 node index.js
