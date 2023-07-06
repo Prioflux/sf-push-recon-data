@@ -1,3 +1,5 @@
+# Liquid testing voor geüpdatete code
+
 # Empty state
 empty_state: &unit_blueprint
   context:
@@ -24,5 +26,8 @@ unit_1_test_1_office_name_selected:
 
   expectation:
     <<: *expectation_blueprint
+    reconciled: true
     results:
       gebied_klant: "leuven_hoofdkantoor"
+      
+      

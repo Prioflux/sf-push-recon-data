@@ -2,7 +2,7 @@
   "auto_hide_formula": "",
   "text_configuration": null,
   "virtual_account_number": "",
-  "reconciliation_type": "only_reconciled_with_data",
+  "reconciliation_type": "can_be_reconciled_without_data",
   "public": false,
   "allow_duplicate_reconciliation": false,
   "is_active": true,
