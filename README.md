@@ -6,6 +6,8 @@ Liquid documentation: https://developer.silverfin.com/docs
 
 Silverfin API documentation: https://api.getsilverfin.com/api_docs
 
+Silverfin API - Swagger JSON: https://live.getsilverfin.com/api/v4/api_doc
+
 # Template
 
 The template is a simple reconciliation template with a dropdown that contains a list of locations that a user can select.
